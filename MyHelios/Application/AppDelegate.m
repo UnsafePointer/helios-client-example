@@ -10,6 +10,12 @@
 
 #import "AFNetworkActivityIndicatorManager.h"
 
+@interface AppDelegate ()
+
+- (void)saveContext;
+
+@end
+
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;

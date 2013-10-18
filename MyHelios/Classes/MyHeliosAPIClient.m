@@ -1,3 +1,11 @@
+//
+//  MyHeliosAPIClient.m
+//  MyHelios
+//
+//  Created by Taller Technologies on 10/18/13.
+//  Copyright (c) 2013 Taller Technologies. All rights reserved.
+//
+
 #import "MyHeliosAPIClient.h"
 #import "AFJSONRequestOperation.h"
 
@@ -5,22 +13,22 @@ static NSString * const kMyHeliosAPIBaseURLString = @"http://myhelios.herokuapp.
 
 @implementation MyHeliosAPIClient
 
-+ (instancetype)sharedClient {
++ (instancetype)sharedClient
+{
     static MyHeliosAPIClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedClient = [[self alloc] initWithBaseURL:[NSURL URLWithString:kMyHeliosAPIBaseURLString]];
     });
-    
     return _sharedClient;
 }
 
-- (id)initWithBaseURL:(NSURL *)url {
+- (id)initWithBaseURL:(NSURL *)url
+{
     self = [super initWithBaseURL:url];
     if (!self) {
         return nil;
     }
-    
     [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
     [self setDefaultHeader:@"Accept" value:@"application/json"];
     
@@ -29,7 +37,8 @@ static NSString * const kMyHeliosAPIBaseURLString = @"http://myhelios.herokuapp.
 
 #pragma mark - AFIncrementalStore
 
-- (id)representationOrArrayOfRepresentationsFromResponseObject:(id)responseObject {
+- (id)representationOrArrayOfRepresentationsFromResponseObject:(id)responseObject
+{
     return responseObject;
 }
 
@@ -38,9 +47,6 @@ static NSString * const kMyHeliosAPIBaseURLString = @"http://myhelios.herokuapp.
                                  fromResponse:(NSHTTPURLResponse *)response 
 {
     NSMutableDictionary *mutablePropertyValues = [[super attributesForRepresentation:representation ofEntity:entity fromResponse:response] mutableCopy];
-    
-    // Customize the response object to fit the expected attribute keys and values  
-    
     return mutablePropertyValues;
 }
 

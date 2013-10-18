@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TasksViewController : UITableViewController
+@interface TasksViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property NSManagedObjectContext *managedObjectContext;
 
