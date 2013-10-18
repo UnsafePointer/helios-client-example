@@ -32,7 +32,8 @@
 {
     [super viewDidLoad];
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Task"];
-    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"completedAt" ascending:NO]];
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"completedAt"
+                                                                   ascending:NO]];
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                                                         managedObjectContext:self.managedObjectContext
                                                                           sectionNameKeyPath:nil
@@ -89,6 +90,16 @@
     Task *task = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [task valueForKey:@"text"];
     cell.textLabel.textColor = [task isCompleted] ? [UIColor lightGrayColor] : [UIColor blackColor];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        Task *task = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        [self.managedObjectContext deleteObject:task];
+        [self.managedObjectContext save:nil];
+    }
 }
 
 #pragma mark - NSFetchedResultsControllerDelegate
