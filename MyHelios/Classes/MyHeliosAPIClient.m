@@ -1,7 +1,7 @@
 #import "MyHeliosAPIClient.h"
 #import "AFJSONRequestOperation.h"
 
-static NSString * const kMyHeliosAPIBaseURLString = @"<# API Base URL #>";
+static NSString * const kMyHeliosAPIBaseURLString = @"http://myhelios.herokuapp.com";
 
 @implementation MyHeliosAPIClient
 
