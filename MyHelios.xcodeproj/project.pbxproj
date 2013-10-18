@@ -14,6 +14,8 @@
 		C62792A1181190E80069BDED /* MyHeliosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C62792A0181190E80069BDED /* MyHeliosTests.m */; };
 		C62792A6181192540069BDED /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C627928718118A420069BDED /* Storyboard.storyboard */; };
 		C62792A7181192740069BDED /* MyHelios.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = C6A9926C181186370050A548 /* MyHelios.xcdatamodeld */; };
+		C62792AA1811BB240069BDED /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62792A91811BB240069BDED /* TaskViewController.m */; };
+		C62792AD1811BC6E0069BDED /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = C62792AC1811BC6E0069BDED /* Task.m */; };
 		C6A99252181186370050A548 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A99251181186370050A548 /* Foundation.framework */; };
 		C6A99254181186370050A548 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A99253181186370050A548 /* CoreGraphics.framework */; };
 		C6A99256181186370050A548 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A99255181186370050A548 /* UIKit.framework */; };
@@ -51,6 +53,10 @@
 		C62792A0181190E80069BDED /* MyHeliosTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyHeliosTests.m; path = Tests/MyHeliosTests.m; sourceTree = "<group>"; };
 		C62792A2181190F10069BDED /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Support/InfoPlist.strings; sourceTree = "<group>"; };
 		C62792A4181191130069BDED /* MyHeliosTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MyHeliosTests-Info.plist"; path = "Support/MyHeliosTests-Info.plist"; sourceTree = "<group>"; };
+		C62792A81811BB240069BDED /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaskViewController.h; path = Controllers/TaskViewController.h; sourceTree = "<group>"; };
+		C62792A91811BB240069BDED /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaskViewController.m; path = Controllers/TaskViewController.m; sourceTree = "<group>"; };
+		C62792AB1811BC6E0069BDED /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Task.h; path = Models/Task.h; sourceTree = "<group>"; };
+		C62792AC1811BC6E0069BDED /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Task.m; path = Models/Task.m; sourceTree = "<group>"; };
 		C6A9924E181186370050A548 /* MyHelios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHelios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A99251181186370050A548 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C6A99253181186370050A548 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,6 +113,8 @@
 			children = (
 				C627928A18118AA10069BDED /* TasksViewController.h */,
 				C627928B18118AA10069BDED /* TasksViewController.m */,
+				C62792A81811BB240069BDED /* TaskViewController.h */,
+				C62792A91811BB240069BDED /* TaskViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -202,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				C6A9926C181186370050A548 /* MyHelios.xcdatamodeld */,
+				C62792AB1811BC6E0069BDED /* Task.h */,
+				C62792AC1811BC6E0069BDED /* Task.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -353,7 +363,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C62792AD1811BC6E0069BDED /* Task.m in Sources */,
 				C6A99271181186370050A548 /* MyHeliosIncrementalStore.m in Sources */,
+				C62792AA1811BB240069BDED /* TaskViewController.m in Sources */,
 				C627929018118FF70069BDED /* AppDelegate.m in Sources */,
 				C6A99261181186370050A548 /* MyHeliosAPIClient.m in Sources */,
 				C62792981811900B0069BDED /* main.m in Sources */,

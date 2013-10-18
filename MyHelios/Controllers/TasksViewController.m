@@ -8,6 +8,8 @@
 
 #import "TasksViewController.h"
 #import "AppDelegate.h"
+#import "Task.h"
+#import "TaskViewController.h"
 
 @interface TasksViewController () <NSFetchedResultsControllerDelegate>
 
@@ -44,6 +46,22 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue
+                 sender:(id)sender
+{
+    TaskViewController *viewController = (TaskViewController *)[segue destinationViewController];
+    viewController.managedObjectContext = self.managedObjectContext;
+    if ([[segue identifier] isEqualToString:@"Add"]) {
+        viewController.title = @"Add";
+        viewController.task = nil;
+    }
+    else if ([[segue identifier] isEqualToString:@"Edit"]) {
+        viewController.title = @"Edit";
+        Task *task = [self.fetchedResultsController objectAtIndexPath:[self.tableView indexPathForSelectedRow]];
+        viewController.task = task;
+    }
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView
@@ -66,9 +84,11 @@
 }
 
 - (void)configureCell:(UITableViewCell *)cell
-    forRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSManagedObject *managedObject = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [managedObject valueForKey:@"text"];
+    forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Task *task = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = [task valueForKey:@"text"];
+    cell.textLabel.textColor = [task isCompleted] ? [UIColor lightGrayColor] : [UIColor blackColor];
 }
 
 #pragma mark - NSFetchedResultsControllerDelegate
