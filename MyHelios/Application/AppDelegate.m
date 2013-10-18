@@ -13,6 +13,7 @@
 @interface AppDelegate ()
 
 - (void)saveContext;
+- (void)setupAppearance;
 
 @end
 
@@ -29,6 +30,7 @@
                                                              diskPath:nil];
     [NSURLCache setSharedURLCache:URLCache];
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+    [self setupAppearance];
     return YES;
 }
 
@@ -51,6 +53,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     [self saveContext];
+}
+
+#pragma mark - Private Methods
+
+- (void)setupAppearance
+{
+    [[self window] setTintColor:[UIColor whiteColor]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 #pragma mark - Core Data

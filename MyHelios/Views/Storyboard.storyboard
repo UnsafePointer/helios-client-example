@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Tasks View Controller - TO DO-->
+        <!--Tasks View Controller - To Do-->
         <scene sceneID="0zw-6A-PxY">
             <objects>
                 <tableViewController id="OwR-8B-DQr" customClass="TasksViewController" sceneMemberID="viewController">
@@ -36,7 +36,9 @@
                             <outlet property="delegate" destination="OwR-8B-DQr" id="VDs-fS-Vwa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="TO DO" id="XUz-Ez-qZz"/>
+                    <navigationItem key="navigationItem" title="To Do" id="XUz-Ez-qZz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="PAL-xF-alW"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZm-wg-ogB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,6 +52,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sAE-IJ-YVS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.94509803921568625" green="0.76862745098039209" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
