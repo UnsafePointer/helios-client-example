@@ -17,7 +17,7 @@ Then set up the dependencies and open the workspace and you're ready to go:
 
 ```sh
 $ cd furry-ninja && pod install && open MyHelios.xcworkspace
-```  
+```
 
 ![ios-todo-screenshot-1](https://dl.dropboxusercontent.com/u/99114459/ios-todo-screenshot-1.PNG)&nbsp;
 ![ios-todo-screenshot-2](https://dl.dropboxusercontent.com/u/99114459/ios-todo-screenshot-2.PNG)
