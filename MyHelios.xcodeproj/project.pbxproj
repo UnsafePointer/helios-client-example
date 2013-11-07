@@ -62,7 +62,7 @@
 		C6A99253181186370050A548 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C6A99255181186370050A548 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C6A99257181186370050A548 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		C6A9925A181186370050A548 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		C6A9925A181186370050A548 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C6A9925F181186370050A548 /* MyHeliosAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyHeliosAPIClient.h; path = Classes/MyHeliosAPIClient.h; sourceTree = "<group>"; };
 		C6A99260181186370050A548 /* MyHeliosAPIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MyHeliosAPIClient.m; path = Classes/MyHeliosAPIClient.m; sourceTree = "<group>"; };
 		C6A9926D181186370050A548 /* MyHelios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyHelios.xcdatamodel; sourceTree = "<group>"; };

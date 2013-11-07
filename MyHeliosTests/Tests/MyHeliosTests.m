@@ -2,8 +2,8 @@
 //  MyHeliosTests.m
 //  MyHeliosTests
 //
-//  Created by Taller Technologies on 10/18/13.
-//  Copyright (c) 2013 Taller Technologies. All rights reserved.
+//  Created by Renzo Crisóstomo on 10/18/13.
+//  Copyright (c) 2013 Renzo Crisóstomo. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
