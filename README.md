@@ -3,20 +3,20 @@ Helios Client App Example
 
 __Description:__
 
-This is an Helios client app example. The code for the backend app can be found here: https://github.com/Ruenzuo/ducking-wookie.
+This is an Helios client app example. The code for the server app can be found here: https://github.com/Ruenzuo/helios-server-example.
 
 __Building:__
 
 In order to build the application, clone this repo:
 
 ```sh
-$ git clone git@github.com:Ruenzuo/furry-ninja.git
+$ git clone git@github.com:Ruenzuo/helios-client-example.git
 ```
 
 Then set up the dependencies and open the workspace and you're ready to go:
 
 ```sh
-$ cd furry-ninja && pod install && open MyHelios.xcworkspace
+$ cd helios-client-example && pod install && open MyHelios.xcworkspace
 ```
 
 ![ios-todo-screenshot-1](https://dl.dropboxusercontent.com/u/99114459/ios-todo-screenshot-1.PNG)&nbsp;
