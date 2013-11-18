@@ -1,5 +1,5 @@
-furry-ninja
-===========
+Helios Client App Example
+=========================
 
 __Description:__
 
