@@ -62,14 +62,15 @@
 
 - (IBAction)onTouchUpInsideSaveButton:(id)sender
 {
+    __weak typeof(self) blocksafeSelf = self;
     [self.managedObjectContext performBlock:^{
-        if (!_task) {
-            _task = [NSEntityDescription insertNewObjectForEntityForName:@"Task"
-                                                  inManagedObjectContext:self.managedObjectContext];
+        if (!blocksafeSelf.task) {
+            blocksafeSelf.task = [NSEntityDescription insertNewObjectForEntityForName:@"Task"
+                                                               inManagedObjectContext:blocksafeSelf.managedObjectContext];
         }
-        _task.text = _txtFieldText.text;
-        _task.completed = _swtCompleted.on;
-        [self.managedObjectContext save:nil];
+        blocksafeSelf.task.text = blocksafeSelf.txtFieldText.text;
+        blocksafeSelf.task.completed = blocksafeSelf.swtCompleted.on;
+        [blocksafeSelf.managedObjectContext save:nil];
     }];
     [self.navigationController popViewControllerAnimated:YES];
 }
