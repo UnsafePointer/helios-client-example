@@ -19,10 +19,10 @@ Then set up the dependencies and open the workspace and you're ready to go:
 $ cd helios-client-example && pod install && open MyHelios.xcworkspace
 ```
 
-![ios-todo-screenshot-1](https://dl.dropboxusercontent.com/u/99114459/ios-todo-screenshot-1.PNG)&nbsp;
-![ios-todo-screenshot-2](https://dl.dropboxusercontent.com/u/99114459/ios-todo-screenshot-2.PNG)
-![ios-todo-screenshot-3](https://dl.dropboxusercontent.com/u/99114459/ios-todo-screenshot-3.PNG)&nbsp;
-![ios-todo-screenshot-4](https://dl.dropboxusercontent.com/u/99114459/ios-todo-screenshot-4.PNG)
+![ios-todo-screenshot-1](https://dl.dropboxusercontent.com/u/12352209/GitHub/ios-todo-screenshot-1.PNG)&nbsp;
+![ios-todo-screenshot-2](https://dl.dropboxusercontent.com/u/12352209/GitHub/ios-todo-screenshot-2.PNG)
+![ios-todo-screenshot-3](https://dl.dropboxusercontent.com/u/12352209/GitHub/ios-todo-screenshot-3.PNG)&nbsp;
+![ios-todo-screenshot-4](https://dl.dropboxusercontent.com/u/12352209/GitHub/ios-todo-screenshot-4.PNG)
 
 For more information on how to get started with Helios, go to https://github.com/helios-framework/helios.
 
