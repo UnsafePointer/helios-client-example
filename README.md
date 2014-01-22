@@ -3,7 +3,7 @@ Helios Client App Example
 
 __Description:__
 
-This is an Helios client app example. The code for the server app can be found here: https://github.com/Ruenzuo/helios-server-example.
+This is an Helios client app example. The code for the server app can be found [here](https://github.com/Ruenzuo/helios-server-example).
 
 __Building:__
 
@@ -24,14 +24,14 @@ $ cd helios-client-example && pod install && open MyHelios.xcworkspace
 ![ios-todo-screenshot-3](https://dl.dropboxusercontent.com/u/12352209/GitHub/ios-todo-screenshot-3.PNG)&nbsp;
 ![ios-todo-screenshot-4](https://dl.dropboxusercontent.com/u/12352209/GitHub/ios-todo-screenshot-4.PNG)
 
-For more information on how to get started with Helios, go to https://github.com/helios-framework/helios.
+For more information on how to get started with Helios, visit their [repo site](https://github.com/helios-framework/helios).
 
 License
 =======
 
     The MIT License (MIT)
 
-    Copyright (c) 2013 Renzo Crisóstomo
+    Copyright (c) 2014 Renzo Crisóstomo
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of
     this software and associated documentation files (the "Software"), to deal in
